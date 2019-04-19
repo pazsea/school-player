@@ -43,16 +43,18 @@ class Player extends Component {
     return (
       <Wrapper>
         <PlayerWrapper>
-          <ReactPlayer
-            className="react-player"
-            url={url}
-            width="100%"
-            controls={controls}
-            // height='50%'
-          />
+          {url ? (
+            <ReactPlayer
+              className="react-player"
+              url={url}
+              width="100%"
+              controls={controls}
+              // height='50%'
+            />
+          ) : null}
 
           <LinkButton onClick={this.togglePlaylist}>
-            OPEN KRILLZ0R VIDEOS PLAYLIST
+            OPEN VIDEO PLAYLIST
           </LinkButton>
           {showPlaylist && videos
             ? videos

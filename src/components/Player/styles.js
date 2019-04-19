@@ -11,10 +11,11 @@ export const Wrapper = styled.div`
 export const PlayerWrapper = styled.div`
   /* position: relative; */
   /* padding-top: 56.25%; 720 / 1280 = 0.5625 */
+  margin-top: 5%;
   width: 50%;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex-direction: column;
   .react-player {
     /* width: 50%; */
@@ -22,16 +23,19 @@ export const PlayerWrapper = styled.div`
     top: 0; */
     /* left: 0; */
   }
+  @media (max-width: 1025px) {
+    width: 95%;
+  }
 `;
 
 export const AddVideoDiv = styled.div`
-  margin-top: 2%;
-  color: blue;
+  margin-top: 10%;
+  color: lightcoral;
   width: 100%;
   display: flex;
   justify-content: center;
   i {
-    background: gold;
+    background: whitesmoke;
     border-radius: 50%;
     border: 1px solid black;
   }
