@@ -29,7 +29,7 @@ export const PlayerWrapper = styled.div`
 `;
 
 export const AddVideoDiv = styled.div`
-  margin-top: 10%;
+  margin-top: 7%;
   color: lightcoral;
   width: 100%;
   display: flex;
@@ -62,9 +62,17 @@ export const VideoLi = styled.li`
   border: 2px solid lightseagreen;
   box-shadow: 1px 1px 2px #fff inset, -1px -1px 2px #fff inset;
   border-radius: 3px/6px;
+  position: relative;
   span {
     color: red;
     font-weight: 600;
+  }
+  i {
+    color: red;
+    float: right;
+    position: absolute;
+    top: 20%;
+    right: 2%;
   }
 `;
 

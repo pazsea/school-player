@@ -88,6 +88,7 @@ function Videos({ video, index, selectedUrl }) {
       <span key={'span' + index}>Föreläsning: {video.lecture}</span>
       <br />
       Datum: {new Date(video.createdAt).toLocaleDateString()}
+      <i className="fab fa-youtube fa-2x" />
     </VideoLi>
   );
 }
