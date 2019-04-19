@@ -1,6 +1,8 @@
 import React, { Component } from '../../../node_modules/react';
 import ReactPlayer from '../../../node_modules/react-player';
 
+import { compareDescending } from '../../constants/functions';
+
 import {
   PlayerWrapper,
   LinkButton,
@@ -34,9 +36,6 @@ class Player extends Component {
     event.preventDefault();
   };
 
-  selectedVideo() {
-    console.log('CLICKED');
-  }
   render() {
     console.log('RENDERAS');
     const { showPlaylist, url, controls } = this.state;
@@ -56,14 +55,16 @@ class Player extends Component {
             OPEN KRILLZ0R VIDEOS PLAYLIST
           </LinkButton>
           {showPlaylist && videos
-            ? videos.map((video, index) => (
-                <Videos
-                  key={'videoComponent' + index}
-                  video={video}
-                  index={index}
-                  selectedUrl={this.selectedUrl}
-                />
-              ))
+            ? videos
+                .sort(compareDescending)
+                .map((video, index) => (
+                  <Videos
+                    key={'videoComponent' + index}
+                    video={video}
+                    index={index}
+                    selectedUrl={this.selectedUrl}
+                  />
+                ))
             : null}
 
           <AddVideoDiv>
