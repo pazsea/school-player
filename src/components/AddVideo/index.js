@@ -16,11 +16,10 @@ class AddVideo extends Component {
 
   onSubmit = event => {
     const { lecture, url } = this.state;
-    const numericDate = Date.now().getTime();
     this.props.firebase.videos().push({
       lecture: lecture,
       url: url,
-      createdAt: numericDate,
+      createdAt: Date.now(),
     });
     event.preventDefault();
   };
