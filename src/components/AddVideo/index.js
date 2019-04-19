@@ -5,14 +5,10 @@ import { withFirebase } from '../Firebase';
 import { AddVideoForm } from './styles';
 
 class AddVideo extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      lecture: '',
-      url: '',
-    };
-  }
+  state = {
+    lecture: '',
+    url: '',
+  };
 
   onSubmit = event => {
     const { lecture, url } = this.state;
@@ -20,6 +16,10 @@ class AddVideo extends Component {
       lecture: lecture,
       url: url,
       createdAt: Date.now(),
+    });
+    this.setState({
+      lecture: '',
+      url: '',
     });
     event.preventDefault();
   };

@@ -8,18 +8,19 @@ import { withFirebase } from '../Firebase';
 class App extends Component {
   state = {
     loading: false,
+    videos: [],
   };
   componentDidMount() {
     this.setState({ loading: true });
     const { firebase } = this.props;
 
     firebase.videos().on('value', snapshot => {
-      const loadedVideos = snapshot.val();
+      const videoObject = snapshot.val();
 
-      // const usersList = Object.keys(usersObject).map(key => ({
-      //   ...usersObject[key],
-      //   uid: key,
-      // }));
+      const loadedVideos = Object.keys(videoObject).map(key => ({
+        ...videoObject[key],
+        uid: key,
+      }));
 
       this.setState({
         videos: loadedVideos,
@@ -32,7 +33,7 @@ class App extends Component {
     const { loading, videos } = this.state;
     return (
       <Fragment>
-        {loading ? <p>Loading...</p> : <Player {...videos} />}
+        {loading ? <p>Loading...</p> : <Player videos={videos} />}
       </Fragment>
     );
   }
