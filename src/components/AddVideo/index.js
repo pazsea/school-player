@@ -48,7 +48,7 @@ class AddVideo extends Component {
           placeholder="URL?"
           required
         />
-        <button type="submit">ADD VIDEO</button>
+        <button type="submit">LÄGG TILL VIDEO</button>
       </AddVideoForm>
     );
   }

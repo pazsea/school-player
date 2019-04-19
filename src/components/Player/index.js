@@ -1,7 +1,10 @@
 import React, { Component } from '../../../node_modules/react';
 import ReactPlayer from '../../../node_modules/react-player';
 
-import { compareDescending } from '../../constants/functions';
+import {
+  compareDescending,
+  diffDays,
+} from '../../constants/functions';
 
 import {
   PlayerWrapper,
@@ -11,6 +14,7 @@ import {
   AddVideoDiv,
 } from './styles';
 import AddVideo from '../AddVideo/index';
+import { networkInterfaces } from 'os';
 
 class Player extends Component {
   state = {
@@ -54,7 +58,7 @@ class Player extends Component {
           ) : null}
 
           <LinkButton onClick={this.togglePlaylist}>
-            OPEN VIDEO PLAYLIST
+            ÖPPNA PLAYLISTAN
           </LinkButton>
           {showPlaylist && videos
             ? videos
@@ -89,6 +93,8 @@ function Videos({ video, index, selectedUrl }) {
       <br />
       Datum: {new Date(video.createdAt).toLocaleDateString()}
       <i className="fab fa-youtube fa-2x" />
+      <br />
+      Tillagd: {diffDays(video.createdAt)} dagar sedan.
     </VideoLi>
   );
 }

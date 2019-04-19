@@ -10,8 +10,9 @@ export function compareAscending(a, b) {
   return startA < startB ? -1 : 1;
 }
 
-// var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-// var firstDate = new Date(2008,01,12);
-// var secondDate = new Date(2008,01,22);
+export function diffDays(a) {
+  var oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
 
-// var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+  var difference = Math.round(Math.abs((a - Date.now()) / oneDay));
+  return difference;
+}
