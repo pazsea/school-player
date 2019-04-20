@@ -15,6 +15,11 @@ export const AddVideoForm = styled.form`
     padding: 1em;
     margin-top: 5%;
   }
+  input:nth-child(3) {
+    width: 100%;
+    padding: 1em;
+    margin-top: 5%;
+  }
 
   button {
     margin-top: 10%;
