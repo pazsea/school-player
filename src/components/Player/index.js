@@ -23,6 +23,7 @@ class Player extends Component {
     controls: true,
     showTenVideos: true,
     showAllVideos: false,
+    addForm: false,
   };
 
   showAllVideos = () => {
@@ -51,6 +52,12 @@ class Player extends Component {
     event.preventDefault();
   };
 
+  showAddForm = () => {
+    this.setState(prevState => ({
+      addForm: !prevState.addForm,
+    }));
+  };
+
   render() {
     console.log('RENDERAS');
     const {
@@ -58,6 +65,7 @@ class Player extends Component {
       showTenVideos,
       url,
       controls,
+      addForm,
     } = this.state;
     const { videos } = this.props;
     return (
@@ -124,9 +132,12 @@ class Player extends Component {
             : null}
 
           <AddVideoDiv>
-            <i className="fas fa-plus-circle fa-4x" />
+            <i
+              onClick={this.showAddForm}
+              className="fas fa-plus-circle fa-4x"
+            />
           </AddVideoDiv>
-          <AddVideo />
+          {addForm ? <AddVideo /> : null}
         </PlayerWrapper>
       </Wrapper>
     );
