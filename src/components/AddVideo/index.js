@@ -8,20 +8,18 @@ class AddVideo extends Component {
   state = {
     lecture: '',
     url: '',
-    time: '',
   };
 
   onSubmit = event => {
-    const { lecture, url, time } = this.state;
+    const { lecture, url } = this.state;
     this.props.firebase.videos().push({
       lecture: lecture,
       url: url,
-      createdAt: Number([time]),
+      createdAt: Date.now(),
     });
     this.setState({
       lecture: '',
       url: '',
-      time: '',
     });
     event.preventDefault();
   };
@@ -31,7 +29,7 @@ class AddVideo extends Component {
   };
 
   render() {
-    const { lecture, url, time } = this.state;
+    const { lecture, url } = this.state;
     return (
       <AddVideoForm onSubmit={this.onSubmit}>
         <input
@@ -48,14 +46,6 @@ class AddVideo extends Component {
           onChange={this.onChange}
           type="url"
           placeholder="URL?"
-          required
-        />
-        <input
-          name="time"
-          value={time}
-          onChange={this.onChange}
-          type="text"
-          placeholder="time?"
           required
         />
         <button type="submit">LÄGG TILL VIDEO</button>

@@ -4,7 +4,6 @@ export const AddVideoForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-
   input:nth-child(1) {
     width: 100%;
     padding: 1em;
@@ -15,12 +14,6 @@ export const AddVideoForm = styled.form`
     padding: 1em;
     margin-top: 5%;
   }
-  input:nth-child(3) {
-    width: 100%;
-    padding: 1em;
-    margin-top: 5%;
-  }
-
   button {
     margin-top: 10%;
     width: 100%;
