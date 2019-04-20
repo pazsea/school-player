@@ -16,16 +16,21 @@ class App extends Component {
 
     firebase.videos().on('value', snapshot => {
       const videoObject = snapshot.val();
+      if (videoObject) {
+        const loadedVideos = Object.keys(videoObject).map(key => ({
+          ...videoObject[key],
+          uid: key,
+        }));
 
-      const loadedVideos = Object.keys(videoObject).map(key => ({
-        ...videoObject[key],
-        uid: key,
-      }));
-
-      this.setState({
-        videos: loadedVideos,
-        loading: false,
-      });
+        this.setState({
+          videos: loadedVideos,
+          loading: false,
+        });
+      } else {
+        this.setState({
+          loading: false,
+        });
+      }
     });
   }
 
