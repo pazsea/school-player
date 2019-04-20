@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const PlayerWrapper = styled.div`
-  margin: 5% 0 3% 0;
+  margin: 2% 0 3% 0;
   width: 50%;
   display: flex;
   justify-content: center;

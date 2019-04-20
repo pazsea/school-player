@@ -48,6 +48,7 @@ class Player extends Component {
     this.setState({
       showAllVideos: false,
       showTenVideos: false,
+      addForm: false,
     });
     event.preventDefault();
   };
