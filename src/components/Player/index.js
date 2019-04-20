@@ -8,24 +8,34 @@ import {
 
 import {
   PlayerWrapper,
-  LinkButton,
+  ShowAllButton,
+  ShowTenButton,
   Wrapper,
   VideoLi,
   AddVideoDiv,
+  PlaylistDiv,
 } from './styles';
 import AddVideo from '../AddVideo/index';
-import { networkInterfaces } from 'os';
 
 class Player extends Component {
   state = {
     url: null,
     controls: true,
-    showPlaylist: false,
+    showTenVideos: true,
+    showAllVideos: false,
   };
 
-  togglePlaylist = () => {
+  showAllVideos = () => {
     this.setState(prevState => ({
-      showPlaylist: !prevState.showPlaylist,
+      showAllVideos: !prevState.showAllVideos,
+      showTenVideos: false,
+    }));
+  };
+
+  showTenVideos = () => {
+    this.setState(prevState => ({
+      showTenVideos: !prevState.showTenVideos,
+      showAllVideos: false,
     }));
   };
 
@@ -34,15 +44,21 @@ class Player extends Component {
       url: selectedUrl,
     });
     window.scrollTo(0, 0);
-    this.setState(prevState => ({
-      showPlaylist: !prevState.showPlaylist,
-    }));
+    this.setState({
+      showAllVideos: false,
+      showTenVideos: false,
+    });
     event.preventDefault();
   };
 
   render() {
     console.log('RENDERAS');
-    const { showPlaylist, url, controls } = this.state;
+    const {
+      showAllVideos,
+      showTenVideos,
+      url,
+      controls,
+    } = this.state;
     const { videos } = this.props;
     return (
       <Wrapper>
@@ -53,14 +69,48 @@ class Player extends Component {
               url={url}
               width="100%"
               controls={controls}
-              // height='50%'
             />
           ) : null}
+          <PlaylistDiv>
+            <ShowTenButton
+              active={showTenVideos}
+              onClick={this.showTenVideos}
+            >
+              SENASTE 10 FÖRELÄSNINGAR
+            </ShowTenButton>
+            <ShowAllButton
+              active={showAllVideos}
+              onClick={this.showAllVideos}
+            >
+              VISA ALLA
+            </ShowAllButton>
+          </PlaylistDiv>
+          {showTenVideos && videos
+            ? videos.length > 10
+              ? videos
+                  .sort(compareDescending)
+                  .slice(0, 10)
+                  .map((video, index) => (
+                    <Videos
+                      key={'videoComponent' + index}
+                      video={video}
+                      index={index}
+                      selectedUrl={this.selectedUrl}
+                    />
+                  ))
+              : videos
+                  .sort(compareDescending)
+                  .map((video, index) => (
+                    <Videos
+                      key={'videoComponent' + index}
+                      video={video}
+                      index={index}
+                      selectedUrl={this.selectedUrl}
+                    />
+                  ))
+            : null}
 
-          <LinkButton onClick={this.togglePlaylist}>
-            ÖPPNA PLAYLISTAN
-          </LinkButton>
-          {showPlaylist && videos
+          {showAllVideos && videos
             ? videos
                 .sort(compareDescending)
                 .map((video, index) => (
