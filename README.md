@@ -5,7 +5,7 @@ Other user can view this playlist in real-time. You can either choose to view th
 
 These videos is also sorted of when they were added.
 
-![Alt text](/src/components/images/schoolplayer.gif "School Player in action")
+![Alt text](/src/images/schoolplayer.gif "School Player in action")
 
 
 
