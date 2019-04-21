@@ -10,9 +10,10 @@ These videos is also sorted of when they were added.
 
 
 ## Features:
+RUN NPM INSTALL. ADD YOUR OWN FIREBASE PROJECT.
 
 * uses:
-  * create a playlist of youtube, soundcloud, vimeo videos.
+  * create your own custom playlist of youtube, soundcloud, vimeo videos.
   
  
 ## TO DO:
