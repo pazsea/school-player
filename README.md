@@ -22,3 +22,6 @@ RUN NPM INSTALL. ADD YOUR OWN FIREBASE PROJECT.
 * User would need to sign in for adding videos.
 * Auth user should be able to add slide url to lecture playlist.
 * Auth user can edit list
+
+* STYLING
+* REFACTOR ALL CODE. (IE, STYLED COMPONENTS)
