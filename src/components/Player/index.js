@@ -26,6 +26,13 @@ class Player extends Component {
     addForm: false,
   };
 
+  showPlaylist() {
+    this.setState(prevState => ({
+      showAllVideos: !prevState.showAllVideos,
+      showTenVideos: false,
+    }));
+  }
+
   showAllVideos = () => {
     this.setState(prevState => ({
       showAllVideos: !prevState.showAllVideos,
