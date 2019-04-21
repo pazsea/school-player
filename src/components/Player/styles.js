@@ -64,7 +64,7 @@ export const VideoLi = styled.li`
     color: red;
     float: right;
     position: absolute;
-    top: 20%;
+    top: 32%;
     right: 2%;
   }
 `;

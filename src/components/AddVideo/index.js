@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import { withFirebase } from '../Firebase';
 
 import { AddVideoForm } from './styles';
 
-class AddVideo extends Component {
+class AddVideo extends PureComponent {
   state = {
     lecture: '',
     url: '',
@@ -30,6 +30,7 @@ class AddVideo extends Component {
 
   render() {
     const { lecture, url } = this.state;
+    console.log('ADD VIDEO RENDERS');
     return (
       <AddVideoForm onSubmit={this.onSubmit}>
         <input
