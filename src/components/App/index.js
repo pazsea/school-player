@@ -34,6 +34,10 @@ class App extends Component {
     });
   }
 
+  componentWillUnmount() {
+    this.props.firebase.videos().off();
+  }
+
   render() {
     const { loading, videos } = this.state;
     return (
