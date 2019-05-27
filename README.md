@@ -1,15 +1,26 @@
-# School Player
+<p align="center">
+<img src="pazlogo.png" alt="Patrick Sjöberg logo" width="350"/>
+</p>
+
+
+## 🚩 Project Goal
+
 Yay! School is in!
 Working with react-player library, I've made an player where the user can add their own lecture stream to a custom playlist.
 Other user can view this playlist in real-time. You can either choose to view the latest 10 lectures or the whole database of lectures.
 The design is simple so it can work well on mobiles as it is the main aim.
 
 
-![Alt text](/src/images/schoolplayer.gif "School Player in action")
+
+## What’s In This Document
+
+- [Features](#-features)
+- [How to run this project](#-how-to-run-this-project)
+- [Gif](#-gif)
+- [Author](#-author)
 
 
-
-## Features:
+## 🔔 Features:
 
   * Add videos to the playlist entering the title and URL.
   * Play videos in the embedded react-player by pressing on a video.
@@ -18,8 +29,29 @@ The design is simple so it can work well on mobiles as it is the main aim.
   * Of course stop, play, fullscreen etc of youtube controls.
   * App is rezised for mobile use. 
   
+
+## 💻 How to run this project
+1. **Install from the root folder, GJTP**
+
+   ```shell
+   npm install
+
+   ```
+2. **Then just run the app**
+  
+   ```shell
+   npm start
+
+   ```
+
+## 💾 Gif
+  
+  <p align="center">
+<img src="/src/images/schoolplayer.gif" alt="schoolPlayer" width="500"/>
+</p>
+
  
-## TO DO:
+## Still TO DO:
 
  * Input to search for an specific video either name, category or date.
  * User would need to sign in for adding videos.
@@ -29,3 +61,7 @@ The design is simple so it can work well on mobiles as it is the main aim.
 
  * STYLING
  * REFACTOR ALL CODE. (IE, STYLED COMPONENTS)
+ 
+ 
+ ## 📓 Author
+Patrick Sjöberg <a href="https://github.com/pazsea">@pazsea</a> 
