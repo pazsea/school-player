@@ -1,5 +1,5 @@
 <p align="center">
-<img src="pazlogo.png" alt="Patrick Sjöberg logo" width="350"/>
+<img src="/src/images/pazlogo.png" alt="Patrick Sjöberg logo" width="150"/>
 </p>
 
 
