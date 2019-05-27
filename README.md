@@ -25,6 +25,7 @@ The design is simple so it can work well on mobiles as it is the main aim.
  * User would need to sign in for adding videos.
  * Auth user should be able to add slide url to lecture playlist.
  * Auth user can edit list
+ * Automatically add videos from google docs to firebase API.
 
  * STYLING
  * REFACTOR ALL CODE. (IE, STYLED COMPONENTS)
