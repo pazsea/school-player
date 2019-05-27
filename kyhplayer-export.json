@@ -1,0 +1,269 @@
+{
+  "videos" : {
+    "-Lcvyz3LbYcHnmQlMe1z" : {
+      "createdAt" : 1535652816000,
+      "lecture" : "HTML + CSS FM + EM DEL 1",
+      "url" : "https://www.youtube.com/watch?v=cZ-dFS3TNVU&feature=youtu.be"
+    },
+    "-LcvzBdD06SF0X4tAHos" : {
+      "createdAt" : 1535652816000,
+      "lecture" : "HTML + CSS FM + EM DEL 2",
+      "url" : "https://www.youtube.com/watch?v=jp0m34SKDaY&feature=youtu.be"
+    },
+    "-LcvzcxtR0E-LDu0ac8w" : {
+      "createdAt" : 1536257616000,
+      "lecture" : "Miniuppgift 1 (HTML+CSS)",
+      "url" : "https://www.youtube.com/watch?v=_vWWRKsQ5ZE&feature=youtu.be"
+    },
+    "-Lcvzxh3UUvYyDIHPC8z" : {
+      "createdAt" : 1536603216000,
+      "lecture" : "Javascript Del 1",
+      "url" : "https://www.youtube.com/watch?v=a0fCMnVVBsE&feature=youtu.be"
+    },
+    "-Lcw-7GdxTLxueODaZWW" : {
+      "createdAt" : 1536603216000,
+      "lecture" : "Javascript Del 2",
+      "url" : "https://www.youtube.com/watch?v=TXYbmi2Ai0Q&feature=youtu.be"
+    },
+    "-Lcw-D_EmoRiXHTZ33a2" : {
+      "createdAt" : 1536603216000,
+      "lecture" : "Javascript Del 3",
+      "url" : "https://www.youtube.com/watch?v=uuTXcn47cEA&feature=youtu.be"
+    },
+    "-Lcw-QeJqmi14NxS5UG3" : {
+      "createdAt" : 1536862416000,
+      "lecture" : "HTML + CSS + JS LIVEKODNING",
+      "url" : "https://www.youtube.com/watch?v=k5RhYSNe8O0&feature=youtu.be"
+    },
+    "-Lcw-dirQSQDQmD0KX_d" : {
+      "createdAt" : 1537208016000,
+      "lecture" : "HTML Semantik + Forms",
+      "url" : "https://www.youtube.com/watch?v=pD0Ma-76Gvk&feature=youtu.be"
+    },
+    "-Lcw-q2vg4a52sSZODrL" : {
+      "createdAt" : 1537467216000,
+      "lecture" : "HTML + CSS + JS (BOOTSTRAP)",
+      "url" : "https://www.youtube.com/watch?v=QRRvGf7oRGg&feature=youtu.be"
+    },
+    "-Lcw02BXhBaGhG-ARLd3" : {
+      "createdAt" : 1537899216000,
+      "lecture" : "Git + Github Del 1",
+      "url" : "https://www.youtube.com/watch?v=QNmeJv_e4Xk&feature=youtu.be"
+    },
+    "-Lcw0BdvcUIklBj-RYoz" : {
+      "createdAt" : 1538072016000,
+      "lecture" : "Git + Github Del 2",
+      "url" : "https://www.youtube.com/watch?v=fiPdeM3yq3M&feature=youtu.be"
+    },
+    "-Lcw0UFVJa5XCJ7lhXXk" : {
+      "createdAt" : 1538417616000,
+      "lecture" : "Individuellt Projekt 1",
+      "url" : "https://www.youtube.com/watch?v=TcOlNKNm9AE&feature=youtu.be"
+    },
+    "-Lcw0_a06dOVWH6L0caI" : {
+      "createdAt" : 1538417616000,
+      "lecture" : "Flexbox",
+      "url" : "https://www.youtube.com/watch?v=7qveHeoqmbs&feature=youtu.be"
+    },
+    "-Lcw0iEBil0skzeIJsPT" : {
+      "createdAt" : 1538676816000,
+      "lecture" : "Sökmotoroptimering",
+      "url" : "https://www.youtube.com/watch?v=P7fKt1q2lC8&feature=youtu.be"
+    },
+    "-Lcw0s_NneYvk8SXq9CE" : {
+      "createdAt" : 1539281616000,
+      "lecture" : "Portföljsidor, juridik, ux, exempel, js-bibliotek",
+      "url" : "https://www.youtube.com/watch?v=0l0NB6WlOcs&feature=youtu.be"
+    },
+    "-Lcw10xe3gATr8hWKMF4" : {
+      "createdAt" : 1539627216000,
+      "lecture" : "Scope, Hoisting, Prototype, Optimering, Funktionell Programmering Del 1",
+      "url" : "https://www.youtube.com/watch?v=nR_froquMNA&feature=youtu.be"
+    },
+    "-Lcw17fy6ONqLSlRT7sl" : {
+      "createdAt" : 1539627216000,
+      "lecture" : "Scope, Hoisting, Prototype, Optimering, Funktionell Programmering Del 2",
+      "url" : "https://www.youtube.com/watch?v=Qn6Y8876L3o&feature=youtu.be"
+    },
+    "-Lcw1JWvokql-vGEJyfx" : {
+      "createdAt" : 1540232016000,
+      "lecture" : "Instuderingsfrågor IP1 + Handledning",
+      "url" : "https://www.youtube.com/watch?v=Q1pIhT6MoUk&feature=youtu.be"
+    },
+    "-Lcw1SW5U_tP2uhw4nY4" : {
+      "createdAt" : 1540491216000,
+      "lecture" : "Ternary operator, .forEach, .map, .filter, .reduce",
+      "url" : "https://www.youtube.com/watch?v=T8Gitfq6fsw&feature=youtu.be"
+    },
+    "-Lcw1dxma_yhN0TGXmuy" : {
+      "createdAt" : 1541441616000,
+      "lecture" : "Teamprojekt 1 startar",
+      "url" : "https://www.youtube.com/watch?v=W8kc4hRk-QE&feature=youtu.be"
+    },
+    "-Lcw1mQgoCOUosaZGSws" : {
+      "createdAt" : 1541528016000,
+      "lecture" : "Hur hitta och bedöma JS-bibliotek, hur spara data i browsern?",
+      "url" : "https://www.youtube.com/watch?v=yRTZHB4F17c&feature=youtu.be"
+    },
+    "-Lcw1urLsMl12gTeI4po" : {
+      "createdAt" : 1541700816000,
+      "lecture" : "Spread operator + Rest parameters",
+      "url" : "https://www.youtube.com/watch?v=d0tAhJP1bJA&feature=youtu.be"
+    },
+    "-Lcw20Sviev8138xZVGN" : {
+      "createdAt" : 1542046416000,
+      "lecture" : "Live code",
+      "url" : "https://www.youtube.com/watch?v=SaXLS6rcGNc&feature=youtu.be"
+    },
+    "-Lcw295D_O2I155-NNr2" : {
+      "createdAt" : 1542132816000,
+      "lecture" : "Vad är Code Review",
+      "url" : "https://www.youtube.com/watch?v=Ef1zhLg5Nsc&feature=youtu.be"
+    },
+    "-Lcw2J4sQFF4pZo2uHg3" : {
+      "createdAt" : 1542737616000,
+      "lecture" : "Destructuring",
+      "url" : "https://www.youtube.com/watch?v=QHhgkq2zIz4&feature=youtu.be"
+    },
+    "-Lcw2XwWJn9DVtL8tGsj" : {
+      "createdAt" : 1542910416000,
+      "lecture" : "Classes",
+      "url" : "https://www.youtube.com/watch?v=UxfzyuV_UeM&feature=youtu.be"
+    },
+    "-Lcw2dyLTOqja_25quMv" : {
+      "createdAt" : 1543256016000,
+      "lecture" : "Livekodning",
+      "url" : "https://www.youtube.com/watch?v=rdzDTmt0OGE&feature=youtu.be"
+    },
+    "-Lcw2lqIv8PCTH6p2SkK" : {
+      "createdAt" : 1543342416000,
+      "lecture" : "Miniuppgift 4 + Gästföreläsning",
+      "url" : "https://www.youtube.com/watch?v=djTnQ8MKajo&feature=youtu.be"
+    },
+    "-Lcw2uH66i3-dCg6sjqx" : {
+      "createdAt" : 1543947216000,
+      "lecture" : "Modules/AJAX/Fetch",
+      "url" : "https://www.youtube.com/watch?v=s0J_OosBb7I&feature=youtu.be"
+    },
+    "-Lcw3-ih_Yc9PwhNCfMp" : {
+      "createdAt" : 1544120016000,
+      "lecture" : "Individuella Projektuppgift 2",
+      "url" : "https://www.youtube.com/watch?v=Oif-m78kyV0&feature=youtu.be"
+    },
+    "-Lcw37oigwHs2C3-6Xs2" : {
+      "createdAt" : 1545070416000,
+      "lecture" : "Julfirande med kod eller “React first steps”",
+      "url" : "https://www.youtube.com/watch?v=Hg6oCjmPfJE&feature=youtu.be"
+    },
+    "-Lcw3Go_7MA5jNWmkd4Z" : {
+      "createdAt" : 1545329616000,
+      "lecture" : "Julfirande med kod eller “Hur man kodar en grym design från scratch”. Del 1",
+      "url" : "https://www.youtube.com/watch?v=7jBUlFeoSIY&feature=youtu.be"
+    },
+    "-Lcw3MiMqryAmGWutl8a" : {
+      "createdAt" : 1545329616000,
+      "lecture" : "Julfirande med kod eller “Hur man kodar en grym design från scratch”. Del 2",
+      "url" : "https://www.youtube.com/watch?v=WnvGzDhkclo&feature=youtu.be"
+    },
+    "-Lcw3Xm_zrdyIVXEPVz0" : {
+      "createdAt" : 1545329616000,
+      "lecture" : "Julfirande med kod eller “Hur man kodar en grym design från scratch”. Del 3",
+      "url" : "https://www.youtube.com/watch?v=zYjgu9sZUhA&feature=youtu.be"
+    },
+    "-Lcw3iw4_NzBOO2OetPy" : {
+      "createdAt" : 1546539216000,
+      "lecture" : "Props i React-router",
+      "url" : "https://www.youtube.com/watch?v=Q8JpD7WK36o&feature=youtu.be"
+    },
+    "-Lcw3sUafM0KM2xIZICW" : {
+      "createdAt" : 1546884816000,
+      "lecture" : "React state & prop functions",
+      "url" : "https://www.youtube.com/watch?v=VEF9JIbTTF4&feature=youtu.be"
+    },
+    "-Lcw40PX9q_zOszYgs8X" : {
+      "createdAt" : 1547144016000,
+      "lecture" : "Fetch() i React",
+      "url" : "https://www.youtube.com/watch?v=B057QMN4d7s&feature=youtu.be"
+    },
+    "-Lcw47xPsekLV72sQMOQ" : {
+      "createdAt" : 1547489616000,
+      "lecture" : "Föreläsning AM + Teamprojekt 2 startar",
+      "url" : "https://www.youtube.com/watch?v=qEE7UNnnxeM&feature=youtu.be"
+    },
+    "-Lcw4EKann7Zvt_V-FgO" : {
+      "createdAt" : 1547576016000,
+      "lecture" : "Instuderingsfrågor Ind2",
+      "url" : "https://www.youtube.com/watch?v=-n9DRN1RxDY&feature=youtu.be"
+    },
+    "-Lcw4MXSASwzXeGuapPH" : {
+      "createdAt" : 1548094416000,
+      "lecture" : "Styled components",
+      "url" : "https://www.youtube.com/watch?v=vsG-2qtmccA&feature=youtu.be"
+    },
+    "-Lcw4U819th5eP77Mu9I" : {
+      "createdAt" : 1548699216000,
+      "lecture" : "React + Firebase Del 1",
+      "url" : "https://www.youtube.com/watch?v=4T_OoX9JdOM&feature=youtu.be"
+    },
+    "-Lcw4_GNCpu7EewMyBo5" : {
+      "createdAt" : 1548872016000,
+      "lecture" : "React + Firebase Del 2",
+      "url" : "https://www.youtube.com/watch?v=eV8AxS2d1zE&feature=youtu.be"
+    },
+    "-Lcw4jBC0Kn6FCe5rmjB" : {
+      "createdAt" : 1549304016000,
+      "lecture" : "Databasdesign, Firebase del 1",
+      "url" : "https://www.youtube.com/watch?v=Bg4u_Ju_v-k&feature=youtu.be"
+    },
+    "-Lcw4pn4n1mpO5FmX7Z5" : {
+      "createdAt" : 1550168016000,
+      "lecture" : "Geolocation i React + Firebase",
+      "url" : "https://www.youtube.com/watch?v=uuYg6zjDQdc&feature=youtu.be"
+    },
+    "-Lcw4xJMVjKCo3yZtGZ2" : {
+      "createdAt" : 1550513616000,
+      "lecture" : "React + Firebase Tips & Tricks",
+      "url" : "https://www.youtube.com/watch?v=gNr2kuXlXSY&feature=youtu.be"
+    },
+    "-Lcw59Z9vw6hfXeZNBnA" : {
+      "createdAt" : 1552414416000,
+      "lecture" : "Lab Backend 2.4",
+      "url" : "https://www.youtube.com/watch?v=GFJ_3Hz-Svw&feature=youtu.be"
+    },
+    "-Lcw5JcEZPlyGxfKFn_a" : {
+      "createdAt" : 1552587216000,
+      "lecture" : "Lab Backend 2.4 Del 2",
+      "url" : "https://www.youtube.com/watch?v=jXQHuZljNKM&feature=youtu.be"
+    },
+    "-Lcw5esGrbiZ8yrMyr6q" : {
+      "createdAt" : 1553192016000,
+      "lecture" : "Websockets + polling",
+      "url" : "https://www.youtube.com/watch?v=Sxg_2GD6r08&feature=youtu.be"
+    },
+    "-Lcw5lS5WA-q6rszVXWO" : {
+      "createdAt" : 1553537616000,
+      "lecture" : "Javascript Refresher",
+      "url" : "https://www.youtube.com/watch?v=a0I5pCIKtMA&feature=youtu.be"
+    },
+    "-Lcw5sx9hWhqJl_SQ9Av" : {
+      "createdAt" : 1554142416000,
+      "lecture" : "Labb Backend 1.6 Node.js + NPM",
+      "url" : "https://www.youtube.com/watch?v=Sl9EuhB26Mc&feature=youtu.be"
+    },
+    "-Lcw6-B9HgRRwe9GfJkF" : {
+      "createdAt" : 1554401616000,
+      "lecture" : "Labb Databaser SQL",
+      "url" : "https://www.youtube.com/watch?v=DyZIUv9m7gI&feature=youtu.be"
+    },
+    "-Lcw66KuL3P02Or6K1FO" : {
+      "createdAt" : 1554747216000,
+      "lecture" : "Databaser Del 1",
+      "url" : "https://www.youtube.com/watch?v=DXWTJoPiQa8&feature=youtu.be"
+    },
+    "-Lcw6CL9OR89-qr7pMbR" : {
+      "createdAt" : 1554833616000,
+      "lecture" : "Miniprojekt Backend 2.3 + 2.5",
+      "url" : "https://www.youtube.com/watch?v=pWnQ-7_myo4&feature=youtu.be"
+    }
+  }
+}
