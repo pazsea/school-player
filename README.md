@@ -10,6 +10,10 @@ Working with react-player library, I've made an player where the user can add th
 Other user can view this playlist in real-time. You can either choose to view the latest 10 lectures or the whole database of lectures.
 The design is simple so it can work well on mobiles as it is the main aim.
 
+  <a href="https://school-player.surge.sh/" target="_blank">
+    Live demo.
+  </a>
+
 
 
 ## What’s In This Document
