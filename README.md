@@ -35,7 +35,7 @@ The design is simple so it can work well on mobiles as it is the main aim.
   
 
 ## 💻 How to run this project
-1. **Install from the root folder, GJTP**
+1. **Install from the root folder**
 
    ```shell
    npm install
