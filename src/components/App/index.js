@@ -42,7 +42,7 @@ class App extends Component {
     const { loading, videos } = this.state;
     return (
       <Fragment>
-        {loading ? <p>Loading...</p> : <Player videos={videos} />}
+        {loading ? <p>Laddar...</p> : <Player videos={videos} />}
       </Fragment>
     );
   }
