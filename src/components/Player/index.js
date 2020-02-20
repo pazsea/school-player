@@ -1,5 +1,7 @@
 import React, { Component } from '../../../node_modules/react';
 import ReactPlayer from '../../../node_modules/react-player';
+import App from '../App';
+import { getTerm } from '../../constants/functions';
 
 import {
   compareDescending,
@@ -24,8 +26,18 @@ class Player extends Component {
     showTenVideos: true,
     showAllVideos: false,
     addForm: false,
+    start: 0,
+    showCount: 10
   };
 
+  componentDidMount() {
+    const currentTerm = getTerm({ createdAt: Date.now() });
+    console.log(this.props.videos.map(video => video.term));
+
+  }
+  showVideos(index = 0, count = 10) {
+
+  }
   showPlaylist() {
     this.setState(prevState => ({
       showAllVideos: !prevState.showAllVideos,
@@ -74,6 +86,8 @@ class Player extends Component {
       url,
       controls,
       addForm,
+      start,
+      showCount
     } = this.state;
     const { videos } = this.props;
     return (
@@ -101,43 +115,17 @@ class Player extends Component {
               VISA ALLA
             </ShowAllButton>
           </PlaylistDiv>
-          {showTenVideos && videos
-            ? videos.length > 10
-              ? videos
-                .sort(compareDescending)
-                .slice(0, 10)
-                .map((video, index) => (
-                  <Videos
-                    key={'videoComponent' + index}
-                    video={video}
-                    index={index}
-                    selectedUrl={this.selectedUrl}
-                  />
-                ))
-              : videos
-                .sort(compareDescending)
-                .map((video, index) => (
-                  <Videos
-                    key={'videoComponent' + index}
-                    video={video}
-                    index={index}
-                    selectedUrl={this.selectedUrl}
-                  />
-                ))
-            : null}
-
-          {showAllVideos && videos
-            ? videos
-              .sort(compareDescending)
-              .map((video, index) => (
-                <Videos
-                  key={'videoComponent' + index}
-                  video={video}
-                  index={index}
-                  selectedUrl={this.selectedUrl}
-                />
-              ))
-            : null}
+          {videos && videos
+            .sort(compareDescending)
+            .slice(start, showCount)
+            .map((video, index) => (
+              <Videos
+                key={'videoComponent' + index}
+                video={video}
+                index={index}
+                selectedUrl={this.selectedUrl}
+              />
+            ))};
 
           <AddVideoDiv>
             <i
