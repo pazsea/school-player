@@ -1,6 +1,4 @@
 import React, { Component, Fragment } from 'react';
-
-// import Navigation from '../Navigation';
 import Player from '../Player';
 
 import { withFirebase } from '../Firebase';

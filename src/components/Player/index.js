@@ -15,7 +15,6 @@ import {
   AddVideoDiv,
   PlaylistDiv,
 } from './styles';
-import AddVideo from '../AddVideo/index';
 
 class Player extends Component {
   state = {
@@ -67,7 +66,6 @@ class Player extends Component {
   };
 
   render() {
-    console.log('RENDERAS');
     const {
       showAllVideos,
       showTenVideos,
@@ -138,14 +136,6 @@ class Player extends Component {
                   />
                 ))
             : null}
-
-          <AddVideoDiv>
-            <i
-              onClick={this.showAddForm}
-              className="fas fa-plus-circle fa-4x"
-            />
-          </AddVideoDiv>
-          {addForm ? <AddVideo /> : null}
         </PlayerWrapper>
       </Wrapper>
     );

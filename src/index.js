@@ -6,10 +6,12 @@ import * as serviceWorker from './serviceWorker';
 
 import App from './components/App';
 import Firebase, { FirebaseContext } from './components/Firebase';
+import AddVideo from './components/AddVideo';
 
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
     <App />
+    <AddVideo />
   </FirebaseContext.Provider>,
   document.getElementById('root'),
 );
