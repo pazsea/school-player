@@ -67,7 +67,7 @@ class Player extends Component {
   };
 
   render() {
-    console.log('RENDERAS');
+    //console.log('RENDERAS');
     const {
       showAllVideos,
       showTenVideos,
@@ -104,30 +104,17 @@ class Player extends Component {
           {showTenVideos && videos
             ? videos.length > 10
               ? videos
-                  .sort(compareDescending)
-                  .slice(0, 10)
-                  .map((video, index) => (
-                    <Videos
-                      key={'videoComponent' + index}
-                      video={video}
-                      index={index}
-                      selectedUrl={this.selectedUrl}
-                    />
-                  ))
+                .sort(compareDescending)
+                .slice(0, 10)
+                .map((video, index) => (
+                  <Videos
+                    key={'videoComponent' + index}
+                    video={video}
+                    index={index}
+                    selectedUrl={this.selectedUrl}
+                  />
+                ))
               : videos
-                  .sort(compareDescending)
-                  .map((video, index) => (
-                    <Videos
-                      key={'videoComponent' + index}
-                      video={video}
-                      index={index}
-                      selectedUrl={this.selectedUrl}
-                    />
-                  ))
-            : null}
-
-          {showAllVideos && videos
-            ? videos
                 .sort(compareDescending)
                 .map((video, index) => (
                   <Videos
@@ -137,6 +124,19 @@ class Player extends Component {
                     selectedUrl={this.selectedUrl}
                   />
                 ))
+            : null}
+
+          {showAllVideos && videos
+            ? videos
+              .sort(compareDescending)
+              .map((video, index) => (
+                <Videos
+                  key={'videoComponent' + index}
+                  video={video}
+                  index={index}
+                  selectedUrl={this.selectedUrl}
+                />
+              ))
             : null}
 
           <AddVideoDiv>
