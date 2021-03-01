@@ -20,8 +20,8 @@ class Player extends Component {
   state = {
     url: null,
     controls: true,
-    showTenVideos: true,
-    showAllVideos: false,
+    showTenVideos: false,
+    showAllVideos: true,
     addForm: false,
   };
 
@@ -102,30 +102,17 @@ class Player extends Component {
           {showTenVideos && videos
             ? videos.length > 10
               ? videos
-                  .sort(compareDescending)
-                  .slice(0, 10)
-                  .map((video, index) => (
-                    <Videos
-                      key={'videoComponent' + index}
-                      video={video}
-                      index={index}
-                      selectedUrl={this.selectedUrl}
-                    />
-                  ))
+                .sort(compareDescending)
+                .slice(0, 10)
+                .map((video, index) => (
+                  <Videos
+                    key={'videoComponent' + index}
+                    video={video}
+                    index={index}
+                    selectedUrl={this.selectedUrl}
+                  />
+                ))
               : videos
-                  .sort(compareDescending)
-                  .map((video, index) => (
-                    <Videos
-                      key={'videoComponent' + index}
-                      video={video}
-                      index={index}
-                      selectedUrl={this.selectedUrl}
-                    />
-                  ))
-            : null}
-
-          {showAllVideos && videos
-            ? videos
                 .sort(compareDescending)
                 .map((video, index) => (
                   <Videos
@@ -135,6 +122,19 @@ class Player extends Component {
                     selectedUrl={this.selectedUrl}
                   />
                 ))
+            : null}
+
+          {showAllVideos && videos
+            ? videos
+              .sort(compareDescending)
+              .map((video, index) => (
+                <Videos
+                  key={'videoComponent' + index}
+                  video={video}
+                  index={index}
+                  selectedUrl={this.selectedUrl}
+                />
+              ))
             : null}
         </PlayerWrapper>
       </Wrapper>
@@ -148,12 +148,12 @@ function Videos({ video, index, selectedUrl }) {
       key={'li' + index}
       onClick={event => selectedUrl(event, video.url)}
     >
-      <span key={'span' + index}>Föreläsning: {video.lecture}</span>
+      <span key={'span' + index}>{video.lecture}</span>
       <br />
-      Datum: {new Date(video.createdAt).toLocaleDateString()}
+      {new Date(video.createdAt).toLocaleDateString()}
       <i className="fab fa-youtube fa-2x" />
       <br />
-      Tillagd: {diffDays(video.createdAt)} dagar sedan.
+      Added {diffDays(video.createdAt)} days ago.
     </VideoLi>
   );
 }

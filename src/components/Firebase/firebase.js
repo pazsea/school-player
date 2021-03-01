@@ -3,13 +3,15 @@ import 'firebase/auth';
 import 'firebase/database';
 
 const config = {
-  apiKey: 'AIzaSyB439cux7TUefb0brEzWAke68OOQU9knXA',
-  authDomain: 'kyhplayer.firebaseapp.com',
-  databaseURL: 'https://kyhplayer.firebaseio.com',
-  projectId: 'kyhplayer',
-  storageBucket: 'kyhplayer.appspot.com',
-  messagingSenderId: '751303324824',
-};
+  apiKey: "AIzaSyATAkgoiS3tjM5IAQBB2BqhZFPwcNOd3o4",
+  authDomain: "fir-react-auth-2020.firebaseapp.com",
+  databaseURL: "https://fir-react-auth-2020.firebaseio.com",
+  projectId: "fir-react-auth-2020",
+  storageBucket: "fir-react-auth-2020.appspot.com",
+  messagingSenderId: "656112410762",
+  appId: "1:656112410762:web:1db26c2448fbe1b7150d73",
+  measurementId: "G-2R81RY053S"
+}
 
 class Firebase {
   constructor() {
